@@ -24,7 +24,7 @@ export const FaBarsIcon = styled(FaBars)`
   color: #fff;
 `;
 export const Section1 = styled.div`
-  background-image: url("https://www.prabisha.co.uk/wp-content/uploads/2022/10/6-PC-UK-Website-Banner-CONTACT-scaled.jpg");
+  background-image: url("https://res.cloudinary.com/dg0telgxq/image/upload/v1679971185/contact-us-message-landing-page-260nw-765294985_gldxop.webp");
   height: 73vh;
   background-size: cover;
   opacity: 0.9;
@@ -76,24 +76,25 @@ export const ContactHeading = styled.h1`
   text-transform: uppercase;
   line-height: 1.3;
   @media screen and (min-width:768px) {
-    margin-top:220px;
+    margin-top:160px;
   }
   @media (max-width: 768px) {
     font-size: 20px;
-    margin-top:80px;
+    margin-top:50px;
   }
 `;
 
 export const Section2M = styled.div`
   height: 35vh;
-  background-image: url("https://www.prabisha.co.uk/wp-content/uploads/2022/10/6-PC-UK-Website-Banner-CONTACT-scaled.jpg");
-  display: flex;
+ 
+  background-color: #d4bff5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23bbb7a8' fill-opacity='0.42' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");  
   justify-content: center;
   align-items: center;
   padding: 70px;
   max-width: 100%;
   @media screen and (max-width: 768px) {
-    min-height: 80vh;
+    min-height: 100vh;
     padding: 20px;
   }
 `;
@@ -158,13 +159,14 @@ export const ImageA = styled.img`
   border-radius: 25px;
   transform: translateZ(0);
   transition:transform 0.25s ease-out;
+  &:hover{
+    transform:scale(1.05);
+}
   cursor: pointer;
   @media screen and (max-width: 768px) {
     width: 95%;
   }
-&:hover{
-    transform:scale(1.05);
-}
+
 `;
 
 
@@ -239,7 +241,7 @@ export const Section3M = styled.div`
   padding: 100px;
   height: 100vh;
   @media screen and (max-width: 768px) {
-    min-height: 120vh;
+    min-height: 170vh;
     padding:10px;
     display: flex;
     flex-direction: column;
@@ -289,23 +291,7 @@ export const Text2 = styled.h2`
   font-weight: 400;
 `;
 
-export const ContactForm = styled.div`
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-`;
-export const Input = styled.input`
-  margin: 10px;
-  padding: 12px;
-  background: #fafafa;
-  border: none;
-  width: 100%;
-  @media screen and (max-width: 768px) {
-    width: 80%;
-  }
-`;
+
 
 export const Select = styled.select`
   width: 100%;
@@ -329,16 +315,6 @@ export const Option = styled.option`
   }
 `;
 
-export const Button = styled.button`
-  width: 120px;
-  background-color: #c99b3b;
-  color: #ffffff;
-  font-size: 15px;
-  border-radius: 15px;
-  padding: 16px 32px;
-  font-family: Raleway, sans-serif;
-  border: none;
-`;
 export const Section4M = styled.div`
   display: flex;
   justify-content: center;
@@ -348,7 +324,7 @@ export const Section4M = styled.div`
   height: 40vh;
   margin-bottom:20px;
   @media screen and (max-width: 768px) {
-    min-height:120vh;
+    min-height:130vh;
     display: flex;
     flex-direction: column;
     padding: 10px !important;
@@ -395,6 +371,11 @@ export const Section42M = styled.div`
 export const Image1 = styled.img`
   width: 100%;
   height: 80%;
+  transform: translateZ(0);
+  transition:transform 0.25s ease-out;
+  &:hover{
+    transform:scale(1.05);
+}
   @media screen and (max-width: 768px) {
     height: auto;
   }
@@ -419,7 +400,7 @@ padding: 20px 0px 20px 0px;
 background-color: #0b034f;
 height: 40vh;
 @media screen and (max-width: 768px) {
-  min-height:120vh;
+  min-height:130vh;
   display: flex;
   flex-direction: column;
   padding: 10px !important;
@@ -459,7 +440,91 @@ export const Section53M = styled.div`
 export const Image2 = styled.img`
 width: 100%;
 height: 80%;
+transform: translateZ(0);
+  transition:transform 0.25s ease-out;
+  &:hover{
+    transform:scale(1.05);
+}
 @media screen and (max-width: 768px) {
   height: auto;
 }
 `;
+
+export const ContactForm1 = styled.div`
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+`
+  
+export const Label1 =styled.label`
+    color: black;
+    margin-bottom: 10px;
+`
+  
+export const SpanHeading= styled.span`
+    font-size: 24px;
+    color: black;
+    margin-bottom: 12px;
+    font-weight: bold;
+    display: block;
+`
+  
+export const Form1 = styled.form`
+    display: flex;
+    flex-direction: column;
+`
+
+export const Textarea = styled.textarea`
+    resize: none;
+    height: 80px;
+    width: 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    &:focus {
+        outline: none;
+    box-shadow: 0 0 5px #c99b3b;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    }
+`
+  
+export const Input1 = styled.input`
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    &:focus{
+        outline: none;
+    box-shadow: 0 0 5px #c99b3b;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+
+    }
+`
+  
+export const Button12 = styled.button`
+padding: 1.3em 3em;
+font-size: 12px;
+text-transform: uppercase;
+letter-spacing: 2.5px;
+font-weight: 500;
+color: #000;
+background-color: #fff;
+border: none;
+border-radius: 45px;
+box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+transition: all 0.3s ease 0s;
+cursor: pointer;
+outline: none;
+    &:hover{
+        background-color:#c99b3b;
+        box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+        color: #fff;
+        transform: translateY(-7px);
+    }
+    &:active{
+        transform: translateY(-1px);
+    }
+`
